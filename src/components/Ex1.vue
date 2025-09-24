@@ -1,8 +1,30 @@
 <script>
     export default { 
         // Add Code Here
-        // challenge: use array  
-    }
+        data(){
+            return{
+                message: 'Choose your favourite fruit:',
+                fruitsArray: ['apple', 'orange', 'peach'],
+                selectedFruit: ''
+            };
+        },
+        // challenge: use array 
+        computed: {
+            fruit1(){
+                return this.fruitsArray[0];
+            },
+
+            fruit2(){
+                return this.fruitsArray[1];
+            },
+
+            fruit3(){
+                return this.fruitsArray[2];
+            }
+        },
+        methods: {}
+
+    };
 </script>
 
 <template>
